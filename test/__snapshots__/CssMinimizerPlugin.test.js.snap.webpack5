@@ -59,8 +59,20 @@ exports[`CssMinimizerPlugin should respect the hash options #1: errors 1`] = `Ar
 
 exports[`CssMinimizerPlugin should respect the hash options #1: warnings 1`] = `Array []`;
 
+exports[`CssMinimizerPlugin should run plugin against assets added later by plugins: assets 1`] = `
+Object {
+  "newFile.css": ".a{display:block;color:coral}",
+}
+`;
+
+exports[`CssMinimizerPlugin should run plugin against assets added later by plugins: errors 1`] = `Array []`;
+
+exports[`CssMinimizerPlugin should run plugin against assets added later by plugins: warnings 1`] = `Array []`;
+
 exports[`CssMinimizerPlugin should throw error from postcss: error 1`] = `
 Array [
+  "Error: foo.css from Css Minimizer 
+error-plugin: /foo.css:2:3: Postcss error [foo.css:2,3]",
   "Error: foo.css from Css Minimizer 
 error-plugin: /foo.css:2:3: Postcss error [foo.css:2,3]",
 ]
@@ -94,7 +106,7 @@ exports[`CssMinimizerPlugin should work and do not use memory cache when the "ca
 
 exports[`CssMinimizerPlugin should work and generate real content hash: assets 1`] = `
 Object {
-  "entry.19e4764f9c1d9fe130e2.2b805513ea22ef0b0e87.569cdce223d5e9f199ef.css": "body{color:red}a{color:#00f}",
+  "entry.19e4764f9c1d9fe130e2.4c83f86dfff978a8623b.b0f9ad463b6a0480ea34.css": "body{color:red}a{color:#00f}",
 }
 `;
 
